@@ -150,8 +150,8 @@
         </button>
         <div class="collapse" id="account-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" class="link-dark rounded">利用者ID管理</a></li>
-            <li><a href="#" class="link-dark rounded">グループID管理</a></li>
+            <li><a href="UserID.html" class="link-dark rounded">利用者ID管理</a></li>
+            <li><a href="GroupoID.html" class="link-dark rounded">グループID管理</a></li>
           </ul>
         </div>
       </li>

@@ -96,10 +96,10 @@
   <div class="navbar-nav">
    <div class="row">
     <div class="col-md-8 nav-item text-nowrap">
-      <a class="nav-link px-3" href="#">画面プレゼンテーション</a>
+      <a class="nav-link px-3" href="dashboard.html">画面プレゼンテーション</a>
     </div>
     <div class="col-md-4 nav-item text-nowrap">
-      <a class="nav-link px-3" href="#">仕様確認</a>
+      <a class="nav-link px-3" href="data.html">仕様確認</a>
     </div>
   </div>
 </header>
@@ -295,7 +295,7 @@
       </div>
     
   <div  align="center">
-      <button type="submit" class="btn btn-primary btn-lg" onclick = "window.location.href = 'userDetail.html'" >アカウント新規</button>
+      <button type="submit" class="btn btn-primary btn-lg" onclick = "window.location.href = 'userNew.html'" >アカウント新規</button>
 
   </div>
 

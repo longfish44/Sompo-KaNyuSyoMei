@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Change</title>
+    <title>New</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
 
@@ -277,7 +277,7 @@
 	  </div>
   </div>
   <div align="center">
-    <button type="submit" class="btn btn-primary btn-lg">変更</button>
+    <button type="submit" class="btn btn-primary btn-lg">新規</button>
   </div>
 </form>	  
 	     

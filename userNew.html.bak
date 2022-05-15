@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>userDelete</title>
+    <title>userNew</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
 
@@ -277,7 +277,7 @@
     </div>
   </div>
   <div class="col-12" align="center">
-    <button type="button" class="btn btn-primary btn-lg" onclick = "window.location.href = 'userDelete.html'">削除</button>
+    <button type="button" class="btn btn-primary btn-lg" onclick = "window.location.href = 'userNew.html'">新規</button>
   </div>
 </form>	  
 	     

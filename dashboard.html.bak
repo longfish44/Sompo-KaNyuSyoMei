@@ -377,10 +377,10 @@
               <td><a href="detail.html">4-12345</a></td>
               <td>123456</td>
               <td>予約</td>
-              <td>2022-01-01</td>
-              <td>2022-12-31</td>
               <td></td>
               <td></td>
+              <td>2022-05-01</td>
+              <td>2022-05-31</td>
               <td><select id="inputState" class="form-select">
 　　　　　　　　      <option selected>出力パータン</option>
       　　　　　　　　<option>パータン１</option>
@@ -399,10 +399,10 @@
               <td><a href="detail.html">4-12345</a></td>
               <td>123456</td>
               <td>予約</td>
-              <td>2022-05-01</td>
-              <td>2022-05-31</td>
               <td></td>
               <td></td>
+              <td>2022-07-01</td>
+              <td>2022-08-31</td>
               <td><select id="inputState" class="form-select">
 　　　　　　　　      <option selected>出力パータン</option>
       　　　　　　　　<option>パータン１</option>
