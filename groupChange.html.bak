@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>groupDetail</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+
+  <!-- DateTimePicker -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+	  
+	  .btn-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: .25rem .5rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, .65);
+  background-color: transparent;
+  border: 0;
+}
+.btn-toggle:hover,
+.btn-toggle:focus {
+  color: rgba(0, 0, 0, .85);
+  background-color: #d2f4ea;
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+}
+
+.btn-toggle[aria-expanded="true"] {
+  color: rgba(0, 0, 0, .85);
+}
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  display: inline-flex;
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  margin-left: 1.25rem;
+  text-decoration: none;
+}
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus {
+  background-color: #d2f4ea;
+}
+	  
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="./assets/dist/js/dashboard.css" rel="stylesheet">
+
+  </head>
+  <body>
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">SOMPO加入証明書発行システム</a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-nav">
+   <div class="row">
+    <div class="col-md-8 nav-item text-nowrap">
+      <a class="nav-link px-3" href="#">画面プレゼンテーション</a>
+    </div>
+    <div class="col-md-4 nav-item text-nowrap">
+      <a class="nav-link px-3" href="#">仕様確認</a>
+    </div>
+  </div>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3">
+
+    <ul class="list-unstyled ps-0">
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+          契約者
+        </button>
+        <div class="collapse show" id="home-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="dashboard.html" class="link-dark rounded">証明発行</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+          代理店
+        </button>
+        <div class="collapse show" id="dashboard-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="dashboard.html" class="link-dark rounded">証明発行</a></li>
+            <li><a href="metainance.html" class="link-dark rounded">データメンテナンス</a></li>
+            <li><a href="upload.html" class="link-dark rounded">データアップロード</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+          営業店
+        </button>
+        <div class="collapse show" id="orders-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="dashboard.html" class="link-dark rounded">証明発行</a></li>
+            <li><a href="metainance.html" class="link-dark rounded">データメンテナンス</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="border-top my-3"></li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+          管理者
+        </button>
+        <div class="collapse show" id="account-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="UserID.html" class="link-dark rounded">利用者ID管理</a></li>
+            <li><a href="GroupID.html" class="link-dark rounded">グループID管理</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+
+
+        </div>
+
+ 
+	  
+	      <hr>
+    <div class="dropdown">
+      <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+        <strong>User</strong>
+      </a>
+      <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+        <li><a class="dropdown-item" href="#">パスワード変更</a></li>
+        <li><a class="dropdown-item" href="#">設定</a></li>
+        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Sign out</a></li>
+      </ul>
+    </div>
+
+	  
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+
+      <h2 class="visually-hidden">検索キー</h2>
+	  <br>
+
+<form class="row g-3">
+
+  <div class="col-md-4">
+	  <div class="col input-group input-group-lg">
+		<span class="input-group-text" id="inputGroup-sizing-lg">GroupID</span>
+			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+	  </div>
+  </div>
+  <div class="col-md-4">
+	  <div class="col input-group input-group-lg">
+		<span class="input-group-text" id="inputGroup-sizing-lg">GroupName</span>
+			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+	  </div>
+  </div>
+  <div class="col-md-4">
+	  <div class="col input-group input-group-lg">
+		<span class="input-group-text" id="inputGroup-sizing-lg">UserID</span>
+			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+	  </div>
+  </div>
+  <div class="col-md-4">
+	  <div class="col input-group input-group-lg">
+		<span class="input-group-text" id="inputGroup-sizing-lg">適用始期</span>
+			<input type="text" class="form-control"  id="inputDate1"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+	  </div>
+  </div>
+  <div class="col-md-4">
+	  <div class="col input-group input-group-lg">
+		<span class="input-group-text" id="inputGroup-sizing-lg">適用終期</span>
+			<input type="text" class="form-control" id="inputDate2" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+	  </div>
+  </div>
+  
+  <div class="col-md-4">
+	  <div class="col input-group input-group-lg">
+		<span class="input-group-text" id="inputGroup-sizing-lg">ユーザータイプ</span>
+<select id="inputState" class="form-select">
+　　　　　　　　      <option selected>ユーザータイプ</option>
+      　　　　　　　　<option>契約者</option>
+      　　　　　　　　<option>代理店</option>
+      　　　　　　　　<option>営業店</option>
+      　　　　　　　　<option>管理者</option>
+    　　　　　　　</select>	  </div>
+  </div>
+  <div class="col-md-4">
+	  <div class="col input-group input-group-lg">
+		<span class="input-group-text" id="inputGroup-sizing-lg">項目</span>
+			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+	  </div>
+  </div>
+  
+  <div class="col-md-4">
+	  <div class="col input-group input-group-lg">
+		<span class="input-group-text" id="inputGroup-sizing-lg">項目</span>
+			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+	  </div>
+  </div>
+  
+  <div class="col-md-4">
+	  <div class="col input-group input-group-lg">
+		<span class="input-group-text" id="inputGroup-sizing-lg">項目</span>
+			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+	  </div>
+  </div>
+  <div class="col-md-4">
+	  <div class="col input-group input-group-lg">
+		<span class="input-group-text" id="inputGroup-sizing-lg">項目</span>
+			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+	  </div>
+  </div>
+  
+  <div class="col-md-4">
+	  <div class="col input-group input-group-lg">
+		<span class="input-group-text" id="inputGroup-sizing-lg">項目</span>
+			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+	  </div>
+  </div>
+  <div class="col-md-4">
+	  <div class="col input-group input-group-lg">
+		<span class="input-group-text" id="inputGroup-sizing-lg">項目</span>
+			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+	  </div>
+  </div>
+
+  <div class="col-12" align="center">
+    <button type="button" class="btn btn-primary btn-lg" onclick = "window.location.href = 'groupChange.html'">変更</button>
+  </div>
+</form>	  
+	     
+
+	  
+
+	
+	</main>
+  </div>
+</div>
+
+
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="./assets/dist/js/dashboard.js"></script>
+
+      <script src="./assets/dist/css/sidebars.js"></script>
+	  
+<script type="text/javascript">
+
+
+$(function () {
+
+    $('#inputDate1').datetimepicker({
+
+        format: 'YYYY-MM-DD',
+		locale: moment.locale('ja'),
+
+    });
+
+
+});
+
+$(function () {
+
+    $('#inputDate2').datetimepicker({
+
+        format: 'YYYY-MM-DD',
+		locale: moment.locale('ja'),
+
+    });
+
+
+});
+$(function () {
+
+    $('#inputDate3').datetimepicker({
+
+        format: 'YYYY-MM-DD',
+		locale: moment.locale('ja'),
+
+    });
+
+
+});
+</script>
+
+  </body>
+</html>

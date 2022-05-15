@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Dashboard</title>
+    <title>metainnance</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
 
@@ -148,7 +148,7 @@
         <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
           管理者
         </button>
-        <div class="collapse  show" id="account-collapse">
+        <div class="collapse show" id="account-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
             <li><a href="UserID.html" class="link-dark rounded">利用者ID管理</a></li>
             <li><a href="GroupoID.html" class="link-dark rounded">グループID管理</a></li>
@@ -251,7 +251,7 @@
               <th scope="col">選択</th>
               <th scope="col">車体番号</th>
               <th scope="col">資産番号</th>
-              <th scope="col">予約/本件</th>
+　            <th scope="col">予約/本件</th>
               <th scope="col">保険始期</th>
               <th scope="col">保険終期</th>
               <th scope="col">適用開始日</th>
@@ -265,34 +265,11 @@
             <tr>
               <td><input class="form-check-input" type="checkbox"></td>
               <td><a href="detail.html">1-12345</a></td>
-              <td>123456</td>
-              <td>本件</td>
-              <td>2022-01-01</td>
-              <td>2022-12-31</td>
-              <td></td>
-              <td></td>
-              <td><select id="inputState" class="form-select">
-　　　　　　　　      <option selected>出力パータン</option>
-      　　　　　　　　<option>パータン１</option>
-      　　　　　　　　<option>パータン２</option>
-      　　　　　　　　<option>パータン３</option>
-      　　　　　　　　<option>パータン４</option>
-      　　　　　　　　<option>パータン５</option>
-      　　　　　　　　<option>パータン６</option>
-    　　　　　　　</select>
-	　　　　　</td>
-              <td><button type="button" class="btn btn-primary btn-mid" onclick = "window.location.href = 'change.html'" >変更</button></td>
-              <td><button type="button" class="btn btn-primary btn-mid" onclick = "window.location.href = 'delete.html'" >削除</button></td>
-            </tr>
-            <tr>
-              <td><input class="form-check-input" type="checkbox"></td>
-              <td><a href="detail.html">1-12345</a></td>
-              <td>123456</td>
-              <td>予約</td>
-              <td></td>
-              <td></td>
-              <td>2023-01-01</td>
-              <td>2023-12-31</td>
+              <td>data</td>
+              <td>placeholder</td>
+              <td>text</td>
+              <td>placeholder</td>
+              <td>placeholder</td>
               <td><select id="inputState" class="form-select">
 　　　　　　　　      <option selected>出力パータン</option>
       　　　　　　　　<option>パータン１</option>
@@ -309,12 +286,11 @@
             <tr>
               <td><input class="form-check-input" type="checkbox"></td>
               <td><a href="detail.html">2-12345</a></td>
-              <td>123456</td>
-              <td>本件</td>
-              <td>2022-01-01</td>
-              <td>2022-12-31</td>
-              <td></td>
-              <td></td>
+              <td>irrelevant</td>
+              <td>visual</td>
+              <td>layout</td>
+              <td>placeholder</td>
+              <td>text</td>
               <td><select id="inputState" class="form-select">
 　　　　　　　　      <option selected>出力パータン</option>
       　　　　　　　　<option>パータン１</option>
@@ -331,78 +307,11 @@
             <tr>
               <td><input class="form-check-input" type="checkbox"></td>
               <td><a href="detail.html">3-12345</a></td>
-              <td>123456</td>
-              <td>本件</td>
-              <td>2022-01-01</td>
-              <td>2022-12-31</td>
-              <td></td>
-              <td></td>
-              <td><select id="inputState" class="form-select">
-　　　　　　　　      <option selected>出力パータン</option>
-      　　　　　　　　<option>パータン１</option>
-      　　　　　　　　<option>パータン２</option>
-      　　　　　　　　<option>パータン３</option>
-      　　　　　　　　<option>パータン４</option>
-      　　　　　　　　<option>パータン５</option>
-      　　　　　　　　<option>パータン６</option>
-    　　　　　　　</select>
-	　　　　　</td>
-              <td><button type="button" class="btn btn-primary btn-mid" onclick = "window.location.href = 'change.html'" >変更</button></td>
-              <td><button type="button" class="btn btn-primary btn-mid" onclick = "window.location.href = 'delete.html'" >削除</button></td>
-            </tr>
-            <tr>
-              <td><input class="form-check-input" type="checkbox"></td>
-              <td><a href="detail.html">4-12345</a></td>
-              <td>123456</td>
-              <td>本件</td>
-              <td>2022-01-01</td>
-              <td>2022-12-31</td>
-              <td></td>
-              <td></td>
-              <td><select id="inputState" class="form-select">
-　　　　　　　　      <option selected>出力パータン</option>
-      　　　　　　　　<option>パータン１</option>
-      　　　　　　　　<option>パータン２</option>
-      　　　　　　　　<option>パータン３</option>
-      　　　　　　　　<option>パータン４</option>
-      　　　　　　　　<option>パータン５</option>
-      　　　　　　　　<option>パータン６</option>
-    　　　　　　　</select>
-	　　　　　</td>
-              <td><button type="button" class="btn btn-primary btn-mid" onclick = "window.location.href = 'change.html'" >変更</button></td>
-              <td><button type="button" class="btn btn-primary btn-mid" onclick = "window.location.href = 'delete.html'" >削除</button></td>
-            </tr>
-            <tr>
-              <td><input class="form-check-input" type="checkbox"></td>
-              <td><a href="detail.html">4-12345</a></td>
-              <td>123456</td>
-              <td>予約</td>
-              <td>2022-01-01</td>
-              <td>2022-12-31</td>
-              <td></td>
-              <td></td>
-              <td><select id="inputState" class="form-select">
-　　　　　　　　      <option selected>出力パータン</option>
-      　　　　　　　　<option>パータン１</option>
-      　　　　　　　　<option>パータン２</option>
-      　　　　　　　　<option>パータン３</option>
-      　　　　　　　　<option>パータン４</option>
-      　　　　　　　　<option>パータン５</option>
-      　　　　　　　　<option>パータン６</option>
-    　　　　　　　</select>
-	　　　　　</td>
-              <td><button type="button" class="btn btn-primary btn-mid" onclick = "window.location.href = 'change.html'" >変更</button></td>
-              <td><button type="button" class="btn btn-primary btn-mid" onclick = "window.location.href = 'delete.html'" >削除</button></td>
-            </tr>
-            <tr>
-              <td><input class="form-check-input" type="checkbox"></td>
-              <td><a href="detail.html">4-12345</a></td>
-              <td>123456</td>
-              <td>予約</td>
-              <td>2022-05-01</td>
-              <td>2022-05-31</td>
-              <td></td>
-              <td></td>
+              <td>rich</td>
+              <td>dashboard</td>
+              <td>tabular</td>
+              <td>placeholder</td>
+              <td>text</td>
               <td><select id="inputState" class="form-select">
 　　　　　　　　      <option selected>出力パータン</option>
       　　　　　　　　<option>パータン１</option>
@@ -419,13 +328,9 @@
           </tbody>
         </table>
       </div>
-    
   <div  align="center">
-	<a href="TESTPDF.pdf" target="_blank">
-      <input type="button" class="btn btn-primary btn-lg" value="加入証明書発行" />
-    </a>
+    <button type="button" class="btn btn-primary btn-lg" onclick = "window.location.href = 'new.html'">新規</button>
   </div>
-
 	
 	</main>
   </div>
