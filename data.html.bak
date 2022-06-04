@@ -327,7 +327,7 @@
   <div class="col-md-4">
 	  <div class="col input-group input-group-lg">
 		<span class="input-group-text" id="inputGroup-sizing-lg">現在日付(画面上表示しない)</span>
-			<input type="text" class="form-control" id="inputDateNow" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+			<input type="text" class="form-control" id="inputDateNow" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" value="2022-05-15">
 	  </div>
   </div>
 </form>	  
